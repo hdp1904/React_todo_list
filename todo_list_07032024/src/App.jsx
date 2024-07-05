@@ -28,8 +28,8 @@ function App() {
     setTodoList([...todoList, todo]);
   }
 
-  const deleteItem = (e,index) => {
-    setTodoList(todoList.filter( i =>  i+index !== e.target.parentElement.id))
+  const deleteItem = (e) => {
+    setTodoList(todoList.filter( (i,index) =>  i+index !== e.target.parentElement.id))
   }
 
   return (
@@ -45,7 +45,7 @@ function App() {
       <button onClick={addTodoList}>Add To List</button>
       {todoList.map((item,index)=> <li key={item+index} id={item+index}>
         {item}
-        <button onClick={(e)=>deleteItem(e,index)}>Delete</button>
+        <button onClick={deleteItem}>Delete</button>
       </li>
       )}
 
