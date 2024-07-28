@@ -25,7 +25,7 @@ function App() {
   }
 
   const addTodoList = () => {
-    setTodoList([todoList, todo]);
+    setTodoList([...todoList, todo]);
   }
 
   const deleteItem = (e) => {
