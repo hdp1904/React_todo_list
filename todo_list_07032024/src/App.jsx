@@ -28,7 +28,7 @@ function App() {
     setTodoList([...todoList, todo]);
   }
 
-  const deleteItem = (e) => {
+  const deleteItem = e => {
     setTodoList(todoList.filter( (i,index) =>  i+index !== e.target.parentElement.id))
   }
 
