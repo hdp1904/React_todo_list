@@ -17,7 +17,7 @@ function App() {
   }
 
   const reset = () => {
-    setCount(0);
+    setCount(1);
   }
 
   const addTodo = (e) => {
