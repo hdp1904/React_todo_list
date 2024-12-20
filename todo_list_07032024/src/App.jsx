@@ -9,7 +9,7 @@ function App() {
   const [todoList, setTodoList] = useState([]);
 
   const increase = () => {
-
+    setCount(count => count +1);
   }
 
   const decrease = () => {
